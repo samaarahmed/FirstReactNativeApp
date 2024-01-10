@@ -34,7 +34,9 @@ export default function App() {
 
   return (
     <View style={styles.appContainer}>
-      <Button title="Add new goal" color={"blue"} onPress={modalHandler} />
+      <View style={styles.buttonContainer}>
+        <Button title="Add new goal" color={"peech"} onPress={modalHandler} />
+      </View>
       <GoalInput
         visible={modalVisible}
         input={goalInputhandler}
@@ -65,8 +67,12 @@ const styles = StyleSheet.create({
     flex: 1,
     padding: 50,
     paddingHorizontal: 16,
+    backgroundColor:"darkorange"
   },
   goalContainer: {
     flex: 6,
+  },
+  buttonContainer: {
+    marginTop: 50,
   },
 });
